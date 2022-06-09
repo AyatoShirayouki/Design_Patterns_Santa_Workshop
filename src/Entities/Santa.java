@@ -43,19 +43,19 @@ public class Santa {
             if (commandType.equalsIgnoreCase("Трябват ми")){
 
                 if(toyType.equalsIgnoreCase(("кукли"))){
-                    this.dollCommand.setToyDetails(commandParts[2], commandParts[3], commandParts[4], commandParts[5]);
-                    this.dollCommand.execute();
+                    this.dollCommand.setAdditionalDetailsForToy(commandParts[2], commandParts[3], commandParts[4], commandParts[5]);
+                    this.dollCommand.commandExecute();
 
                 }else if(toyType.equalsIgnoreCase("колелета")){
-                    this.bikeCommand.setToyDetails(commandParts[2], commandParts[3], commandParts[4], commandParts[5], commandParts[6]);
-                    this.bikeCommand.execute();
+                    this.bikeCommand.setAdditionalDetailsForToy(commandParts[2], commandParts[3], commandParts[4], commandParts[5], commandParts[6]);
+                    this.bikeCommand.commandExecute();
                 }
 
             }
         }
     }
 	
-	public int getCommandsCount(){
+	public int getNumberOfExecutedCommands(){
         return this.commands.size();
     }
 }

@@ -50,6 +50,6 @@ public class MagicBoard implements ObservableInterface {
 
 	@Override
 	public void notifyAllDwarfs() {
-		dwarfsAssignedToMagicBoard.forEach((k,v)-> v.getToyDetails());
+		dwarfsAssignedToMagicBoard.forEach((key,value)-> value.getDetailsForToy());
 	}
 }

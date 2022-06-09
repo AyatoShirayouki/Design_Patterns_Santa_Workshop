@@ -1,6 +1,6 @@
 package observables;
 
 public interface ObserverInterface {
-	 public void getToyDetails();
+	 public void getDetailsForToy();
 	 public String getName();
 }

@@ -12,7 +12,7 @@ public class Workshop implements WorkshopInterface {
     }
 	
 	@Override
-	public Toy createToy(String createdBy, String toyType, String... toyDetails) {
+	public Toy create(String createdBy, String toyType, String... toyDetails) {
 		if (toyType.equalsIgnoreCase("кукла")){
             toy = new Doll(this.getCurrentDate(),createdBy,toyType, toyDetails);
         }else if(toyType.equalsIgnoreCase("колело")){

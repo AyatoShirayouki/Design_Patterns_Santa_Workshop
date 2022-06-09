@@ -21,11 +21,11 @@ public class Dwarf implements ObserverInterface{
     }
 	
 	@Override
-	public void getToyDetails() {
+	public void getDetailsForToy() {
 		this.toyType = this.magicBoard.getToyType();
         this.toyTypeDetails = this.magicBoard.getToyDetails();
 
-        createdToy = workshop.createToy(this.getName(),this.toyType,this.toyTypeDetails);
+        createdToy = workshop.create(this.getName(),this.toyType,this.toyTypeDetails);
 
         System.out.println(System.lineSeparator() + createdToy);
 	}

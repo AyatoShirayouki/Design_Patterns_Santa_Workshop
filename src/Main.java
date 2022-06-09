@@ -34,7 +34,8 @@ public class Main {
 	    
 	    try{
 	        santa.SantaCommandExecutor();
-	        System.out.println("\n" + santa.getCommandsCount() + " commands have been executed.");
+	        System.out.println("\n" + santa.getNumberOfExecutedCommands() + 
+	        		" команди бяха изпълнени.");
 	    }catch(Exception e){
 	        System.out.println("End of operations."); 
 	    }

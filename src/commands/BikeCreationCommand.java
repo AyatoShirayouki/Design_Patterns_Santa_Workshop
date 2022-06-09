@@ -17,17 +17,17 @@ public class BikeCreationCommand implements Santa_ToyCommandInterface{
     }
 	
 	@Override
-	public void execute() {
+	public void commandExecute() {
 		this.magicBoard.setToy("колело",color,numberOfWheels,numberOfGears,category,brand);
 	}
 
 	@Override
-	public void setToyDetails(String... details) {
-		this.color = details[0];
-        this.numberOfWheels = details[1];
-        this.numberOfGears = details[2];
-        this.category = details[3];
-        this.brand = details[4];
+	public void setAdditionalDetailsForToy(String... additionalDetails) {
+		this.color = additionalDetails[0];
+        this.numberOfWheels = additionalDetails[1];
+        this.numberOfGears = additionalDetails[2];
+        this.category = additionalDetails[3];
+        this.brand = additionalDetails[4];
 	}
 
 }

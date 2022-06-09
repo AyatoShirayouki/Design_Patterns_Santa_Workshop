@@ -16,15 +16,15 @@ public class DollCreationCommand implements Santa_ToyCommandInterface {
     }
 	
 	@Override
-	public void execute() {
+	public void commandExecute() {
 		this.magicBoard.setToy("кукла",hairColor,height,width,eyeColor);
 	}
 
 	@Override
-	public void setToyDetails(String... details) {
-		this.hairColor = details[0];
-        this.height = details[1];
-        this.width = details[2];
-        this.eyeColor = details[3];
+	public void setAdditionalDetailsForToy(String... additionalDetails) {
+		this.hairColor = additionalDetails[0];
+        this.height = additionalDetails[1];
+        this.width = additionalDetails[2];
+        this.eyeColor = additionalDetails[3];
 	}
 }
