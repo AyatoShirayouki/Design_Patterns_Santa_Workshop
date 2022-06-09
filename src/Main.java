@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		Workshop workshop = new Workshop();
 
-	    String fileLocation = "src/ExecutableCommands.txt";
+	    String commandFile = "src/ExecutableCommands.txt";
 
 	    MagicBoard magicBoard= new MagicBoard();
 	    Dwarf firstDwarf = new Dwarf(magicBoard,"Alex", workshop);
@@ -30,12 +30,12 @@ public class Main {
 	    magicBoard.assignDwarfToMagicBoard(eighthDwarf);
 
 	    Santa santa = new Santa(magicBoard);
-	    santa.readCommandsFromInputFile(fileLocation);
+	    santa.readCommandsFromInputFile(commandFile);
 	    
 	    try{
 	        santa.SantaCommandExecutor();
 	        System.out.println("\n" + santa.getNumberOfExecutedCommands() + 
-	        		" команди бяха изпълнени.");
+	        		" ГЄГ®Г¬Г Г­Г¤ГЁ ГЎГїГµГ  ГЁГ§ГЇГєГ«Г­ГҐГ­ГЁ.");
 	    }catch(Exception e){
 	        System.out.println("End of operations."); 
 	    }
